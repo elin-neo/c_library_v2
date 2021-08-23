@@ -4302,7 +4302,7 @@
       </entry>
       <entry value="1" name="NAV_VTOL_LAND_OPTIONS_FW_DESCENT">
         <description>Descend in fixed wing mode, transitioning to multicopter mode for vertical landing when close to the ground.
-          The fixed wing descent pattern is at the discretion of the vehicle (e.g. transition altitude, loiter direction, radius, and speed, etc.).        
+          The fixed wing descent pattern is at the discretion of the vehicle (e.g. transition altitude, loiter direction, radius, and speed, etc.).
         </description>
       </entry>
       <entry value="2" name="NAV_VTOL_LAND_OPTIONS_HOVER_DESCENT">
@@ -6888,6 +6888,13 @@
       <field type="uint8_t" name="id" instance="true">Hygrometer ID</field>
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
+    </message>
+    <message id="60100" name="PUMP">
+      <description>Pump module status</description>
+      <field type="uint8_t" name="status">Pump status</field>
+      <field type="uint32_t" name="speed">Rotation speed</field>
+      <field type="uint32_t" name="level">Level of liquid</field>
+      <field type="float" name="amount">Liquid discharge rate (liters/second)</field>
     </message>
   </messages>
 </mavlink>
