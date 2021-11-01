@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE PUMP PACKING
 
-#define MAVLINK_MSG_ID_PUMP 60100
+#define MAVLINK_MSG_ID_PUMP 199
 
 
 typedef struct __mavlink_pump_t {
@@ -13,17 +13,17 @@ typedef struct __mavlink_pump_t {
 
 #define MAVLINK_MSG_ID_PUMP_LEN 13
 #define MAVLINK_MSG_ID_PUMP_MIN_LEN 13
-#define MAVLINK_MSG_ID_60100_LEN 13
-#define MAVLINK_MSG_ID_60100_MIN_LEN 13
+#define MAVLINK_MSG_ID_199_LEN 13
+#define MAVLINK_MSG_ID_199_MIN_LEN 13
 
 #define MAVLINK_MSG_ID_PUMP_CRC 167
-#define MAVLINK_MSG_ID_60100_CRC 167
+#define MAVLINK_MSG_ID_199_CRC 167
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_PUMP { \
-    60100, \
+    199, \
     "PUMP", \
     4, \
     {  { "status", NULL, MAVLINK_TYPE_UINT8_T, 0, 12, offsetof(mavlink_pump_t, status) }, \
